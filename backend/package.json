@@ -6,7 +6,6 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build": "echo 'Nothing to build for Node.js server'",
     "dev": "vercel dev",
     "predev": "npm install"
   },
