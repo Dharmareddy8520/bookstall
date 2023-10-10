@@ -19,7 +19,7 @@ const Home = () => {
   useEffect(() => {
     const getBooks = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/books");
+        const response = await axios.get("https://bookstall.vercel.app/books");
         const data = response.data.books;
         setBooks(data);
       } catch (error) {

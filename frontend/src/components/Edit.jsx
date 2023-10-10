@@ -14,7 +14,7 @@ const Edit = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/books/${id}`);
+        const res = await axios.get(`https://bookstall.vercel.app/books/${id}`);
         const data = res.data;
         settitle(data.title);
         setauthor(data.author);

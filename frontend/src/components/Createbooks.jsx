@@ -19,7 +19,7 @@ const Createbooks = () => {
     };
     console.log(data);
     try {
-      const res = await axios.post("http://localhost:5000/books", data);
+      const res = await axios.post("https://bookstall.vercel.app/books", data);
       console.log(res.data); // Assuming the response contains the saved data
       navigate("/"); // Redirect to the books page after successful save
     } catch (error) {

@@ -8,7 +8,7 @@ const Deletebooks = () => {
   const navigate = useNavigate();
   const handleDelete = async () => {
     await axios
-      .delete(`http://localhost:5000/books/${id}`)
+      .delete(`https://bookstall.vercel.app/books/${id}`)
       .then((res) => {
         console.log(res.data);
         navigate("/");
